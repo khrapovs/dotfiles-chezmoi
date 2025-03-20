@@ -1,0 +1,44 @@
+set nu rnu
+set ignorecase
+set nofixendofline
+set relativenumber
+set noeol
+
+set scrolloff=3
+
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+
+set incsearch
+set hlsearch
+nnoremap <C-h> :noh<CR>
+syntax enable
+set background=dark
+set tabstop=2
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set showcmd
+autocmd BufNewFile,BufRead *.tcc setlocal syntax=cpp
+autocmd BufNewFile,BufRead *.hcc setlocal syntax=cpp
+autocmd BufNewFile,BufRead *.tsx setlocal syntax=javascript
+set wildmenu
+filetype indent on
+set lazyredraw
+set showmatch
+nnoremap <shift><space> :za
+nnoremap j gj
+nnoremap k gk
+set cindent
+set backspace=indent,eol,start
+set t_BE=
+set cino+=(0
+au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
+if has("unnamedplus")
+    set clipboard=unnamedplus
+else
+    set clipboard=unnamed
+endif
+
