@@ -1,0 +1,47 @@
+# Perosnal
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+
+# m2hycon GitHub
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519_m2hycon
+
+# m2hycon GitLab
+Host gitlab.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519_m2hycon
+
+# dataexplorer2
+Host dataexplorer2
+  Hostname dataexplorer2.westeurope.cloudapp.azure.com
+  User dev
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519_m2hycon
+  LocalForward 9000 localhost:8080
+  LocalForward 9001 localhost:8400
+  LocalForward 9002 localhost:8402
+  LocalForward 9003 localhost:8403
+  LocalForward 9004 localhost:8404
+  LocalForward 9005 localhost:8406
+  LocalForward 9008 localhost:8408
+  LocalForward 9009 localhost:8706
+
+Host saucerful-azureuser
+  HostName 20.67.25.117
+  User azureuser
+  LocalForward 8400 localhost:8400
+
+Host nuprice
+  Hostname 63.177.164.27
+  User ec2-user
+  IdentityFile ~/.ssh/id_ed25519_m2hycon
+  LocalForward 8080 localhost:8080
+  LocalForward 8081 localhost:8081
+  LocalForward 8090 localhost:8090
+  LocalForward 8091 localhost:8091
