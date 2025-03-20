@@ -1,0 +1,23 @@
+[include]
+    path = ~/git-m2hycon.conf
+[includeIf "gitdir:~/Documents/github/personal/"]
+    path = ~/git-personal.conf
+[core]
+    autocrlf = input
+    pager = delta
+[init]
+    defaultBranch = main
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    dark = true      # or light = true, or omit for auto-detection
+    line-numbers = true
+    side-by-side = true
+[merge]
+    conflictstyle = zdiff3
