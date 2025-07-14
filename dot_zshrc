@@ -143,3 +143,5 @@ alias lg='lazygit'
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias config='/usr/bin/git --git-dir=/Users/khrapovs/.cfg/ --work-tree=/Users/khrapovs'
 
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
