@@ -145,3 +145,6 @@ alias config='/usr/bin/git --git-dir=/Users/khrapovs/.cfg/ --work-tree=/Users/kh
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+# zoxide
+eval "$(zoxide init zsh)"
