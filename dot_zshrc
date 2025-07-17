@@ -148,3 +148,7 @@ source <(fzf --zsh)
 
 # zoxide
 eval "$(zoxide init zsh)"
+
+# rclone
+export RCLONE_EXCLUDE='".Trashes/**","._.Trashes",".Spotlight-V100/**",".fseventsd/**"'
+
