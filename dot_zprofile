@@ -1,6 +1,5 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-. "$HOME/.rye/env"
 . "$HOME/.cargo/env"
 
 # Added by Toolbox App
