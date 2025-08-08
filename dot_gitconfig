@@ -1,5 +1,5 @@
 [include]
-    path = ~/git-m2hycon.conf
+    path = ~/git-ing.conf
 [includeIf "gitdir:~/Documents/github/personal/"]
     path = ~/git-personal.conf
 [core]

@@ -1,14 +1,5 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-. "$HOME/.cargo/env"
-
-# Added by Toolbox App
-export PATH="$PATH:/Users/khrapovs/Library/Application Support/JetBrains/Toolbox/scripts"
-
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
 # pipx autocompletion
 # Created by `pipx` on 2024-01-26 07:45:08
 export PATH="$PATH:/Users/khrapovs/.local/bin"

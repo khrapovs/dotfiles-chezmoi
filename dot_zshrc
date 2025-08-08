@@ -80,7 +80,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose ssh python pyenv)
+plugins=(git docker docker-compose ssh python)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,12 +121,6 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 alias ll="ls -la"
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
-
 # yazi
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
@@ -139,9 +133,6 @@ function y() {
 
 # lazygit
 alias lg='lazygit'
-
-# https://www.atlassian.com/git/tutorials/dotfiles
-alias config='/usr/bin/git --git-dir=/Users/khrapovs/.cfg/ --work-tree=/Users/khrapovs'
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
