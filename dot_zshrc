@@ -135,6 +135,9 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# homebrew
+eval "$(brew shellenv)"
+
 # lazygit
 alias lg='lazygit'
 
