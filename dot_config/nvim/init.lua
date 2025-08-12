@@ -1,7 +1,7 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
-vim.g.python3_host_prog = "~/.pyenv/versions/3.12.1/bin/python"
+vim.g.python3_host_prog = "/opt/homebrew/bin/python3"
 
 require("lspconfig").pyright.setup({
   settings = {
