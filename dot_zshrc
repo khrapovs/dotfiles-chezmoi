@@ -150,3 +150,9 @@ eval "$(zoxide init zsh)"
 # rclone
 export RCLONE_EXCLUDE='".Trashes/**","._.Trashes",".Spotlight-V100/**",".fseventsd/**"'
 
+# uv autocompletion
+eval "$(uv generate-shell-completion zsh)"
+
+# Bitwarden ssh agent
+export SSH_AUTH_SOCK=/Users/mu38rs/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
+
