@@ -1,6 +1,6 @@
 [include]
     path = ~/git-ing.conf
-[includeIf "gitdir:~/Documents/github/personal/"]
+[includeIf "gitdir:~/Documents/personal/"]
     path = ~/git-personal.conf
 [core]
     autocrlf = input
