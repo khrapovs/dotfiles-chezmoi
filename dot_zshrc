@@ -135,6 +135,11 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# pipx autocompletion
+export PATH="$PATH:$HOME/.local/bin"
+autoload -U compinit && compinit
+eval "$(register-python-argcomplete pipx)"
+
 # homebrew
 eval "$(brew shellenv)"
 
@@ -156,3 +161,4 @@ eval "$(uv generate-shell-completion zsh)"
 # Bitwarden ssh agent
 export SSH_AUTH_SOCK=/Users/mu38rs/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
 
+export JUPYTER_PLATFORM_DIRS=1
