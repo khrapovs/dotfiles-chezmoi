@@ -17,3 +17,16 @@ require("lspconfig").pyright.setup({
     },
   },
 })
+
+require("lspconfig").basedpyright.setup({
+  settings = {
+    basedpyright = {
+      analysis = {
+        diagnosticMode = "openFilesOnly",
+        inlayHints = {
+          callArgumentNames = false,
+        },
+      },
+    },
+  },
+})
