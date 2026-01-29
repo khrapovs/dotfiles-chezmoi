@@ -23,8 +23,12 @@ require("lspconfig").basedpyright.setup({
     basedpyright = {
       analysis = {
         diagnosticMode = "openFilesOnly",
+        typeCheckingMode = "standard",
         inlayHints = {
           callArgumentNames = false,
+          variableTypes = false,
+          functionReturnTypes = false,
+          parameterTypes = false,
         },
       },
     },
